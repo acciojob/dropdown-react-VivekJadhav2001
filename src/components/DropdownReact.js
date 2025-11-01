@@ -220,39 +220,42 @@ const states = [
   },
 ];
 
-function DropdownReact() {
-  const [stateIndex, setStateIndex] = useState(0);
-  const [cityIndex, setCityIndex] = useState(0);
-  const [landmarkIndex, setLandmarkIndex] = useState(0);
+const DropdownReact = () => {
+  const [stateIndex, setStateIndex] = useState(null);
+  const [cityIndex, setCityIndex] = useState(null);
+  const [landmarkIndex, setLandmarkIndex] = useState(null);
+  const [title, setTitle] = useState("Dropdown React");
 
   const handleStateChange = (e) => {
-    const idx = Number(e.target.value);
-    setStateIndex(idx);
-    setCityIndex(0);
-    setLandmarkIndex(0);
+    const index = e.target.value;
+    setStateIndex(index);
+    setCityIndex(null);
+    setLandmarkIndex(null);
+    setTitle(states[index].name);
   };
 
   const handleCityChange = (e) => {
-    const idx = Number(e.target.value);
-    setCityIndex(idx);
-    setLandmarkIndex(0);
+    const index = e.target.value;
+    setCityIndex(index);
+    setLandmarkIndex(null);
+    setTitle(states[stateIndex].city[index].name);
   };
 
   const handleLandmarkChange = (e) => {
-    setLandmarkIndex(Number(e.target.value));
+    const index = e.target.value;
+    setLandmarkIndex(index);
+    setTitle(states[stateIndex].city[cityIndex].landmarks[index].name);
   };
 
-  const selectedState = states[stateIndex];
-  const selectedCity = selectedState.city[cityIndex];
-  const selectedLandmark = selectedCity.landmarks[landmarkIndex];
-
   return (
-    <div id="main">
-      {/* Title required by the tests */}
-      <h1 id="state-title">Dropdown React</h1>
+    <div className="App">
+      <h1 id="state-title">{title}</h1>
 
-      {/* three dropdowns with required ids */}
-      <select id="state" value={stateIndex} onChange={handleStateChange}>
+      {/* State Dropdown */}
+      <select id="state" onChange={handleStateChange} defaultValue="">
+        <option value="" disabled>
+          Select State
+        </option>
         {states.map((s, i) => (
           <option key={i} value={i}>
             {s.name}
@@ -260,37 +263,35 @@ function DropdownReact() {
         ))}
       </select>
 
-      <select id="city" value={cityIndex} onChange={handleCityChange}>
-        {selectedState.city.map((c, i) => (
-          <option key={i} value={i}>
-            {c.name}
+      {/* City Dropdown */}
+      {stateIndex !== null && (
+        <select id="city" onChange={handleCityChange} defaultValue="">
+          <option value="" disabled>
+            Select City
           </option>
-        ))}
-      </select>
+          {states[stateIndex].city.map((c, i) => (
+            <option key={i} value={i}>
+              {c.name}
+            </option>
+          ))}
+        </select>
+      )}
 
-      <select
-        id="landmark"
-        value={landmarkIndex}
-        onChange={handleLandmarkChange}
-      >
-        {selectedCity.landmarks.map((l, i) => (
-          <option key={i} value={i}>
-            {l.name}
+      {/* Landmark Dropdown */}
+      {cityIndex !== null && (
+        <select id="landmark" onChange={handleLandmarkChange} defaultValue="">
+          <option value="" disabled>
+            Select Landmark
           </option>
-        ))}
-      </select>
-
-      {/* info divs required by tests */}
-      <div id="state-name">{selectedState.name}</div>
-      <div id="state-description">{selectedState.description}</div>
-
-      <div id="city-name">{selectedCity.name}</div>
-      <div id="city-description">{selectedCity.description}</div>
-
-      <div id="landmark-name">{selectedLandmark.name}</div>
-      <div id="landmark-description">{selectedLandmark.description}</div>
+          {states[stateIndex].city[cityIndex].landmarks.map((l, i) => (
+            <option key={i} value={i}>
+              {l.name}
+            </option>
+          ))}
+        </select>
+      )}
     </div>
   );
-}
+};
 
 export default DropdownReact;
