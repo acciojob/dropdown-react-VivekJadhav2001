@@ -37,7 +37,7 @@ const states = [
                     {
                         name: "Berasia",
                         description:
-                            "Berasia is a landmark and a nagar palika in Bhopal district in the state of Madhya Pradesh, India.",
+                            'Berasia is a landmark and a nagar palika in Bhopal district in the state of Madhya Pradesh, India. ',
                     },
                 ],
             },
