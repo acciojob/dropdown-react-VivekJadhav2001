@@ -63,7 +63,7 @@ const states = [
             {
                 name: "Dhanbad",
                 description:
-                    "Dhanbad is the second-most populated city in the Indian state of Jharkhand.",
+                    'Dhanbad is the second-most populated city in the Indian state of Jharkhand. It ranks as the 33rd largest city in India and is the 42nd largest million-plus urban agglomeration in India. It is the 96th fastest growing urban area of the world by the City Mayors Foundation.',
                 landmarks: [
                     {
                         name: "IIT(ISM) Dhanbad",
@@ -95,7 +95,7 @@ const states = [
             {
                 name: "Hazaribagh",
                 description:
-                    "Hazaribagh is a city and a municipal corporation in Hazaribagh district.",
+                    "Hazaribagh is a city and a municipal corporation in the Hazaribagh district of Jharkhand, India. Surrounded by dense forests and hills, it is known for its pleasant climate, scenic beauty, and historical significance. The city serves as a popular getaway destination, offering attractions like the Hazaribagh Wildlife Sanctuary and the Canary Hill viewpoint, making it a blend of natural charm and growing urban development.",
                 landmarks: [
                     {
                         name: "Shaheed Nirmal Mahto Park",
@@ -113,50 +113,56 @@ const states = [
     {
         name: "Assam",
         description:
-            "Assam is a state in northeastern India known for its wildlife, archeological sites and tea plantations.",
+            "Assam is a state in northeastern India known for its lush tea gardens, diverse wildlife, and vibrant cultural heritage. Bordered by Bhutan and Bangladesh, Assam is famous for the mighty Brahmaputra River, Kaziranga National Park, and its centuries-old temples. The state is also a major gateway to the northeastern region of India, blending natural beauty with modern growth and traditions that reflect its deep historical roots.",
         city: [
             {
                 name: "Guwahati",
                 description:
-                    "Guwahati is a sprawling city beside the Brahmaputra River in the northeast Indian state of Assam.",
+                    "Guwahati is a sprawling city beside the Brahmaputra River in Assam, serving as the largest metropolis in Northeast India. Known as the 'Gateway to the Northeast', it is a rapidly growing urban center that blends tradition with progress. Guwahati is home to the famous Kamakhya Temple, vibrant markets, and the Assam State Zoo, making it a cultural and commercial hub for the entire region.",
                 landmarks: [
                     {
                         name: "Ganesh Guri",
-                        description: "Famous because of PVR city center.",
+                        description:
+                            "A bustling commercial area in Guwahati, Ganesh Guri is known for its shopping complexes, eateries, and the popular PVR City Center that draws both locals and tourists alike.",
                     },
                     {
                         name: "Kalyani Nagar",
-                        description: "Located near famous Lakshmi Nagar",
+                        description:
+                            "A well-known residential and business neighborhood located near Lakshmi Nagar, offering a mix of modern lifestyle, cafes, and green spaces for families.",
                     },
                 ],
             },
             {
                 name: "Dimapur",
                 description:
-                    "Dimapur is a city in Nagaland (listed here for the test data).",
+                    "Dimapur, though officially in Nagaland, is often associated with Assam due to its proximity and connectivity. It serves as the commercial capital of Nagaland, featuring a mix of tribal traditions and modern commerce. The city has a rich historical background and acts as a vital link between Assam and other northeastern states.",
                 landmarks: [
                     {
                         name: "City Tower",
-                        description: "Giant Tower standing by the road since history.",
+                        description:
+                            "A prominent landmark in the heart of Dimapur, City Tower stands as a symbol of the city’s vibrant commercial life, surrounded by busy streets and shops.",
                     },
                     {
                         name: "Sunday Market",
-                        description: "Famous for its weekend sale on all items.",
+                        description:
+                            "A colorful and lively market famous for its weekend hustle, offering everything from local produce to handcrafted goods and unique traditional items.",
                     },
                 ],
             },
             {
                 name: "Tezpur",
                 description:
-                    "Tezpur is an urban agglomeration in Sonitpur district, Assam state, India.",
+                    "Tezpur, located in the Sonitpur district of Assam, is often referred to as the 'Cultural Capital of Assam'. Known for its scenic beauty, ancient temples, and mythological significance, Tezpur sits along the banks of the Brahmaputra River and offers a perfect blend of history, nature, and serenity.",
                 landmarks: [
                     {
                         name: "Bamuni Hills",
-                        description: "Best location for photoshoots",
+                        description:
+                            "An archaeological site famous for its ancient stone carvings and sculptures, Bamuni Hills is also a favorite location for photography enthusiasts due to its stunning views.",
                     },
                     {
                         name: "Bhujkhowa Bazar",
-                        description: "Central Market for Tezpur",
+                        description:
+                            "The central marketplace of Tezpur, Bhujkhowa Bazar is always buzzing with life, offering a wide variety of local produce, crafts, and traditional Assamese goods.",
                     },
                 ],
             },
@@ -166,59 +172,62 @@ const states = [
     {
         name: "Bihar",
         description:
-            "Bihar is a state in East India, bordering Nepal. Important Buddhist pilgrimage sites include Bodh Gaya.",
+            "Bihar, located in eastern India, is one of the oldest inhabited regions in the world and holds immense historical, cultural, and spiritual importance. Known as the birthplace of Buddhism and Jainism, it houses many pilgrimage sites, ancient universities, and architectural wonders. From the fertile plains of the Ganges to its growing urban centers, Bihar represents a rich blend of heritage and progress.",
         city: [
             {
                 name: "Patna",
                 description:
-                    "Patna is an ancient city that sprawls along the south bank of the Ganges River in Bihar.",
+                    "Patna, the capital of Bihar, is one of the world’s oldest continuously inhabited cities, located along the southern bank of the Ganges River. Once known as Pataliputra, the ancient seat of the Mauryan Empire, it is now a vibrant urban center balancing history with modernity. Patna is also a key educational and political hub in eastern India.",
                 landmarks: [
                     {
                         name: "Sonpur",
                         description:
-                            "Sonpur is a city and sub-division in the Indian state of Bihar, situated on the banks of the River Gandak and Ganges River.",
+                            "Famous for the Sonpur Cattle Fair, one of Asia’s largest animal fairs, Sonpur lies at the confluence of the Ganges and Gandak rivers and holds immense cultural and trade significance.",
                     },
                     {
                         name: "Maner",
                         description:
-                            "Maner (Maner Sharif) is a notable satellite landmark in Patna Metropolitan Region.",
+                            "Maner, also known as Maner Sharif, is a historic town near Patna renowned for its ancient Sufi shrines and as a center of spirituality and architecture dating back several centuries.",
                     },
                 ],
             },
             {
                 name: "Gaya",
                 description:
-                    "Gaya is a holy city beside the Falgu River, in the northeast Indian state of Bihar.",
+                    "Gaya is a sacred city located on the banks of the Falgu River in Bihar. It holds immense religious importance for both Hindus and Buddhists. The city is closely associated with Lord Buddha’s enlightenment at nearby Bodh Gaya and attracts thousands of pilgrims each year who come to perform ancestral rituals or visit historic temples and monasteries.",
                 landmarks: [
                     {
                         name: "Bakraur",
                         description:
-                            "Bakraur is a village located slightly east of Bodh Gaya; lies across the Phalgu River from Bodh Gaya.",
+                            "Situated just across the Falgu River from Bodh Gaya, Bakraur is believed to be the home of Sujata, the woman who offered food to Gautama Buddha before his enlightenment — a key moment in Buddhist history.",
                     },
                     {
                         name: "Barachatti",
                         description:
-                            "Barachatti is a block in the Gaya district of Bihar. It contains many villages and panchayats.",
+                            "A developing block in Gaya district, Barachatti is known for its rich agricultural surroundings and growing importance as a connecting region for travelers moving toward Jharkhand and southern Bihar.",
                     },
                 ],
             },
             {
                 name: "Darbhanga",
                 description:
-                    "Darbhanga is a city and Municipal Corporation in the Indian state of Bihar.",
+                    "Darbhanga, often referred to as the cultural heart of Bihar, is a historic city known for its royal heritage, palaces, and contributions to Maithili culture and music. It has a strong educational base and is one of the major urban centers of north Bihar, combining tradition with modern development.",
                 landmarks: [
                     {
                         name: "Singhwara",
-                        description: "Famous for its Groundnut Market",
+                        description:
+                            "A well-known town near Darbhanga, Singhwara is famous for its bustling groundnut market and serves as a key agricultural trading point in the region.",
                     },
                     {
                         name: "Jale",
-                        description: "Famous for its roasted seeds market.",
+                        description:
+                            "Located in the Darbhanga district, Jale is known for its traditional roasted seeds market and its contribution to local trade and community gatherings.",
                     },
                 ],
             },
         ],
     },
+
 ];
 
 const DropdownReact = () => {
