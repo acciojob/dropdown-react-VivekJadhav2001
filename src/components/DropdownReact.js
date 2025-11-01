@@ -103,7 +103,7 @@ const states = [
                     },
                     {
                         name: "Gandhi Maidan",
-                        description: "Ideal for conducting major events",
+                        description: 'Ideal for conduction major events',
                     },
                 ],
             },
