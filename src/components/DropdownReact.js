@@ -80,7 +80,7 @@ const states = [
             {
                 name: "Wasseypur",
                 description:
-                    "Wasseypur is a neighbourhood in the city of Dhanbad in Dhanbad Sadar subdivision of Dhanbad district.",
+                    "Wasseypur is a neighbourhood in the city of Dhanbad in Dhanbad Sadar subdivision of Dhanbad district in the state of Jharkhand in India. ",
                 landmarks: [
                     {
                         name: "Pandey muhalla",
