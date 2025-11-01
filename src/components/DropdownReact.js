@@ -95,7 +95,7 @@ const states = [
             {
                 name: "Hazaribagh",
                 description:
-                    "Hazaribagh is a city and a municipal corporation in the Hazaribagh district of Jharkhand, India. Surrounded by dense forests and hills, it is known for its pleasant climate, scenic beauty, and historical significance. The city serves as a popular getaway destination, offering attractions like the Hazaribagh Wildlife Sanctuary and the Canary Hill viewpoint, making it a blend of natural charm and growing urban development.",
+                    "Hazaribagh is a city and a municipal corporation in Hazaribagh district in the Indian state of Jharkhand. It is the divisional headquarters of North Chotanagpur division.",
                 landmarks: [
                     {
                         name: "Shaheed Nirmal Mahto Park",
@@ -113,12 +113,12 @@ const states = [
     {
         name: "Assam",
         description:
-            "Assam is a state in northeastern India known for its lush tea gardens, diverse wildlife, and vibrant cultural heritage. Bordered by Bhutan and Bangladesh, Assam is famous for the mighty Brahmaputra River, Kaziranga National Park, and its centuries-old temples. The state is also a major gateway to the northeastern region of India, blending natural beauty with modern growth and traditions that reflect its deep historical roots.",
+            "Assam is a state in northeastern India known for its lush tea gardens, diverse wildlife, and vibrant cultural heritage. Bordered by Bhutan and Bangladesh, Assam is famous for the mighty Brahmaputra River.",
         city: [
             {
                 name: "Guwahati",
                 description:
-                    "Guwahati is a sprawling city beside the Brahmaputra River in Assam, serving as the largest metropolis in Northeast India. Known as the 'Gateway to the Northeast', it is a rapidly growing urban center that blends tradition with progress. Guwahati is home to the famous Kamakhya Temple, vibrant markets, and the Assam State Zoo, making it a cultural and commercial hub for the entire region.",
+                    "Guwahati is a sprawling city beside the Brahmaputra River in Assam, serving as the largest metropolis in Northeast India. Known as the 'Gateway to the Northeast', it is a rapidly growing urban center that blends tradition with progress.",
                 landmarks: [
                     {
                         name: "Ganesh Guri",
@@ -135,7 +135,7 @@ const states = [
             {
                 name: "Dimapur",
                 description:
-                    "Dimapur, though officially in Nagaland, is often associated with Assam due to its proximity and connectivity. It serves as the commercial capital of Nagaland, featuring a mix of tribal traditions and modern commerce. The city has a rich historical background and acts as a vital link between Assam and other northeastern states.",
+                    "Dimapur, though officially in Nagaland, is often associated with Assam due to its proximity and connectivity. It serves as the commercial capital of Nagaland.",
                 landmarks: [
                     {
                         name: "City Tower",
@@ -152,7 +152,7 @@ const states = [
             {
                 name: "Tezpur",
                 description:
-                    "Tezpur, located in the Sonitpur district of Assam, is often referred to as the 'Cultural Capital of Assam'. Known for its scenic beauty, ancient temples, and mythological significance, Tezpur sits along the banks of the Brahmaputra River and offers a perfect blend of history, nature, and serenity.",
+                    "Tezpur, located in the Sonitpur district of Assam, is often referred to as the 'Cultural Capital of Assam'. Known for its scenic beauty, ancient temples, and mythological significance.",
                 landmarks: [
                     {
                         name: "Bamuni Hills",
@@ -172,12 +172,12 @@ const states = [
     {
         name: "Bihar",
         description:
-            "Bihar, located in eastern India, is one of the oldest inhabited regions in the world and holds immense historical, cultural, and spiritual importance. Known as the birthplace of Buddhism and Jainism, it houses many pilgrimage sites, ancient universities, and architectural wonders. From the fertile plains of the Ganges to its growing urban centers, Bihar represents a rich blend of heritage and progress.",
+            "Bihar, located in eastern India, is one of the oldest inhabited regions in the world and holds immense historical, cultural, and spiritual importance. Known as the birthplace of Buddhism and Jainism.",
         city: [
             {
                 name: "Patna",
                 description:
-                    "Patna, the capital of Bihar, is one of the world’s oldest continuously inhabited cities, located along the southern bank of the Ganges River. Once known as Pataliputra, the ancient seat of the Mauryan Empire, it is now a vibrant urban center balancing history with modernity. Patna is also a key educational and political hub in eastern India.",
+                    "Patna, the capital of Bihar, is one of the world’s oldest continuously inhabited cities, located along the southern bank of the Ganges River.",
                 landmarks: [
                     {
                         name: "Sonpur",
@@ -194,7 +194,7 @@ const states = [
             {
                 name: "Gaya",
                 description:
-                    "Gaya is a sacred city located on the banks of the Falgu River in Bihar. It holds immense religious importance for both Hindus and Buddhists. The city is closely associated with Lord Buddha’s enlightenment at nearby Bodh Gaya and attracts thousands of pilgrims each year who come to perform ancestral rituals or visit historic temples and monasteries.",
+                    "Gaya is a sacred city located on the banks of the Falgu River in Bihar. It holds immense religious importance for both Hindus and Buddhists. ",
                 landmarks: [
                     {
                         name: "Bakraur",
@@ -211,7 +211,7 @@ const states = [
             {
                 name: "Darbhanga",
                 description:
-                    "Darbhanga, often referred to as the cultural heart of Bihar, is a historic city known for its royal heritage, palaces, and contributions to Maithili culture and music. It has a strong educational base and is one of the major urban centers of north Bihar, combining tradition with modern development.",
+                    "Darbhanga, often referred to as the cultural heart of Bihar, is a historic city known for its royal heritage, palaces, and contributions to Maithili culture and music.",
                 landmarks: [
                     {
                         name: "Singhwara",
