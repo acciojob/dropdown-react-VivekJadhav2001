@@ -116,14 +116,14 @@ const states = [
             "Assam is a state in northeastern India known for its lush tea gardens, diverse wildlife, and vibrant cultural heritage. Bordered by Bhutan and Bangladesh, Assam is famous for the mighty Brahmaputra River.",
         city: [
             {
-                name: "Guwahati",
+                name: "Guwhati", // <-- change here
                 description:
-                    "Guwahati is a sprawling city beside the Brahmaputra River in Assam, serving as the largest metropolis in Northeast India. Known as the 'Gateway to the Northeast', it is a rapidly growing urban center that blends tradition with progress.",
+                    "Guwhati is a sprawling city beside the Brahmaputra River in Assam, serving as the largest metropolis in Northeast India. Known as the 'Gateway to the Northeast', it is a rapidly growing urban center that blends tradition with progress.",
                 landmarks: [
                     {
                         name: "Ganesh Guri",
                         description:
-                            "A bustling commercial area in Guwahati, Ganesh Guri is known for its shopping complexes, eateries, and the popular PVR City Center that draws both locals and tourists alike.",
+                            "A bustling commercial area in Guwhati, Ganesh Guri is known for its shopping complexes, eateries, and the popular PVR City Center that draws both locals and tourists alike.",
                     },
                     {
                         name: "Kalyani Nagar",
