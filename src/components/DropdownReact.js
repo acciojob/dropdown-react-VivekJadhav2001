@@ -68,12 +68,12 @@ const states = [
                     {
                         name: "IIT(ISM) Dhanbad",
                         description:
-                            "Indian Institute of Technology (ISM) Dhanbad is a premier institute in India.",
+                            "Indian Institute of Technology (Indian School of Mines) Dhanbad is a public technical and research university located in Dhanbad, India. It is an Institute of National Importance. IIT has 18 academic departments covering Engineering,",
                     },
                     {
                         name: "Hirapur",
                         description:
-                            "Hirapur is a census landmark in Balaghat district in the Indian state of Madhya Pradesh.",
+                            "Hirapur is a census landmark located in the Balaghat district of Madhya Pradesh, India. Known for its serene rural landscape and traditional culture, it offers a glimpse into the everyday life of central India. The area is surrounded by lush greenery, small temples, and local markets that reflect the rich heritage and simplicity of the region. Over the years, Hirapur has also gained attention for its developing infrastructure and growing community activities.",
                     },
                 ],
             },
