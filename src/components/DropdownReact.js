@@ -58,7 +58,7 @@ const states = [
     {
         name: "Jharkhand",
         description:
-            "Jharkhand is a state in eastern India. It's known for its waterfalls, temples, and wildlife.",
+            'Jharkhand is a state in eastern India. It\'s known for its waterfalls, the elegant Jain temples of Parasnath Hill and the elephants and tigers of Betla National Park.',
         city: [
             {
                 name: "Dhanbad",
