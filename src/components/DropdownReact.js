@@ -123,7 +123,7 @@ const states = [
                     {
                         name: "Ganesh Guri",
                         description:
-                            "A bustling commercial area in Guwahati, Ganesh Guri is known for its shopping complexes, eateries, and the popular PVR City Center that draws both locals and tourists alike.",
+                            "Famous because of PVR city center.",
                     },
                     {
                         name: "Kalyani Nagar",
