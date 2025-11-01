@@ -118,12 +118,12 @@ const states = [
             {
                 name: "Guwhati", // <-- change here
                 description:
-                    "Guwhati is a sprawling city beside the Brahmaputra River in Assam, serving as the largest metropolis in Northeast India. Known as the 'Gateway to the Northeast', it is a rapidly growing urban center that blends tradition with progress.",
+                    "Guwahati is a sprawling city beside the Brahmaputra River in the northeast Indian state of Assam. It\'s known for holy sites like the hilltop Kamakhya Temple,",
                 landmarks: [
                     {
                         name: "Ganesh Guri",
                         description:
-                            "A bustling commercial area in Guwhati, Ganesh Guri is known for its shopping complexes, eateries, and the popular PVR City Center that draws both locals and tourists alike.",
+                            "A bustling commercial area in Guwahati, Ganesh Guri is known for its shopping complexes, eateries, and the popular PVR City Center that draws both locals and tourists alike.",
                     },
                     {
                         name: "Kalyani Nagar",
