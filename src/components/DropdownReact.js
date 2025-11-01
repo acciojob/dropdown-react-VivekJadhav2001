@@ -113,7 +113,7 @@ const states = [
     {
         name: "Assam",
         description:
-            "Assam is a state in northeastern India known for its lush tea gardens, diverse wildlife, and vibrant cultural heritage. Bordered by Bhutan and Bangladesh, Assam is famous for the mighty Brahmaputra River.",
+            "Assam is a state in northeastern India known for its wildlife, archeological sites and tea plantations. ",
         city: [
             {
                 name: "Guwhati", // <-- change here
