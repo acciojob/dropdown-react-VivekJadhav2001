@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const states = [
   {
@@ -221,41 +221,42 @@ const states = [
 ];
 
 const DropdownReact = () => {
-  const [stateIndex, setStateIndex] = useState(null);
-  const [cityIndex, setCityIndex] = useState(null);
-  const [landmarkIndex, setLandmarkIndex] = useState(null);
-  const [title, setTitle] = useState("Dropdown React");
+  const [stateIndex, setStateIndex] = useState(0);
+  const [cityIndex, setCityIndex] = useState(0);
+  const [landmarkIndex, setLandmarkIndex] = useState(0);
 
-  const handleStateChange = (e) => {
-    const index = e.target.value;
-    setStateIndex(index);
-    setCityIndex(null);
-    setLandmarkIndex(null);
-    setTitle(states[index].name);
-  };
+  const [state, setState] = useState(states[0]);
+  const [city, setCity] = useState(states[0].city[0]);
+  const [landmark, setLandmark] = useState(states[0].city[0].landmarks[0]);
 
-  const handleCityChange = (e) => {
-    const index = e.target.value;
-    setCityIndex(index);
-    setLandmarkIndex(null);
-    setTitle(states[stateIndex].city[index].name);
-  };
+  useEffect(() => {
+    setState(states[stateIndex]);
+    setCity(states[stateIndex].city[0]);
+    setLandmark(states[stateIndex].city[0].landmarks[0]);
+    setCityIndex(0);
+    setLandmarkIndex(0);
+  }, [stateIndex]);
 
-  const handleLandmarkChange = (e) => {
-    const index = e.target.value;
-    setLandmarkIndex(index);
-    setTitle(states[stateIndex].city[cityIndex].landmarks[index].name);
-  };
+  useEffect(() => {
+    setCity(states[stateIndex].city[cityIndex]);
+    setLandmark(states[stateIndex].city[cityIndex].landmarks[0]);
+    setLandmarkIndex(0);
+  }, [cityIndex]);
+
+  useEffect(() => {
+    setLandmark(states[stateIndex].city[cityIndex].landmarks[landmarkIndex]);
+  }, [landmarkIndex]);
 
   return (
-    <div className="App">
-      <h1 id="state-title">{title}</h1>
+    <div>
+      <h1 id="state-title">{landmark.name}</h1>
 
-      {/* State Dropdown */}
-      <select id="state" onChange={handleStateChange} defaultValue="">
-        <option value="" disabled>
-          Select State
-        </option>
+      {/* Dropdowns */}
+      <select
+        id="state"
+        value={stateIndex}
+        onChange={(e) => setStateIndex(Number(e.target.value))}
+      >
         {states.map((s, i) => (
           <option key={i} value={i}>
             {s.name}
@@ -263,33 +264,41 @@ const DropdownReact = () => {
         ))}
       </select>
 
-      {/* City Dropdown */}
-      {stateIndex !== null && (
-        <select id="city" onChange={handleCityChange} defaultValue="">
-          <option value="" disabled>
-            Select City
+      <select
+        id="city"
+        value={cityIndex}
+        onChange={(e) => setCityIndex(Number(e.target.value))}
+      >
+        {state.city.map((c, i) => (
+          <option key={i} value={i}>
+            {c.name}
           </option>
-          {states[stateIndex].city.map((c, i) => (
-            <option key={i} value={i}>
-              {c.name}
-            </option>
-          ))}
-        </select>
-      )}
+        ))}
+      </select>
 
-      {/* Landmark Dropdown */}
-      {cityIndex !== null && (
-        <select id="landmark" onChange={handleLandmarkChange} defaultValue="">
-          <option value="" disabled>
-            Select Landmark
+      <select
+        id="landmark"
+        value={landmarkIndex}
+        onChange={(e) => setLandmarkIndex(Number(e.target.value))}
+      >
+        {city.landmarks.map((l, i) => (
+          <option key={i} value={i}>
+            {l.name}
           </option>
-          {states[stateIndex].city[cityIndex].landmarks.map((l, i) => (
-            <option key={i} value={i}>
-              {l.name}
-            </option>
-          ))}
-        </select>
-      )}
+        ))}
+      </select>
+
+      {/* State Info */}
+      <div id="state-name">{state.name}</div>
+      <div id="state-description">{state.description}</div>
+
+      {/* City Info */}
+      <div id="city-name">{city.name}</div>
+      <div id="city-description">{city.description}</div>
+
+      {/* Landmark Info */}
+      <div id="landmark-name">{landmark.name}</div>
+      <div id="landmark-description">{landmark.description}</div>
     </div>
   );
 };
