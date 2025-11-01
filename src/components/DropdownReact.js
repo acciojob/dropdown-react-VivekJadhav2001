@@ -289,15 +289,15 @@ const DropdownReact = () => {
       </select>
 
       {/* State Info */}
-      <div id="state-name">{state.name}</div>
+      <h1 id="state-name">{state.name}</h1>
       <div id="state-description">{state.description}</div>
 
       {/* City Info */}
-      <div id="city-name">{city.name}</div>
+      <h1 id="city-title">{city.name}</h1>
       <div id="city-description">{city.description}</div>
 
       {/* Landmark Info */}
-      <div id="landmark-name">{landmark.name}</div>
+      <h1 id="landmark-name">{landmark.name}</h1>
       <div id="landmark-description">{landmark.description}</div>
     </div>
   );
