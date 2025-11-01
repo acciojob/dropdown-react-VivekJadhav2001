@@ -88,46 +88,49 @@ function DropdownReact() {
     setLandmarkIndex(Number(e.target.value));
   };
 
+  const selectedState = states[stateIndex];
+  const selectedCity = selectedState.city[cityIndex];
+  const selectedLandmark = selectedCity.landmarks[landmarkIndex];
+
   return (
     <div id="main">
+      {/* Title for Cypress test */}
+      <h1 id="state-title">Dropdown React</h1>
+
       {/* Dropdowns */}
       <select id="state" onChange={handleStateChange}>
-        {states.map((state, i) => (
+        {states.map((s, i) => (
           <option key={i} value={i}>
-            {state.name}
+            {s.name}
           </option>
         ))}
       </select>
 
       <select id="city" onChange={handleCityChange}>
-        {states[stateIndex].city.map((city, i) => (
+        {selectedState.city.map((c, i) => (
           <option key={i} value={i}>
-            {city.name}
+            {c.name}
           </option>
         ))}
       </select>
 
       <select id="landmark" onChange={handleLandmarkChange}>
-        {states[stateIndex].city[cityIndex].landmarks.map((lm, i) => (
+        {selectedCity.landmarks.map((l, i) => (
           <option key={i} value={i}>
-            {lm.name}
+            {l.name}
           </option>
         ))}
       </select>
 
-      {/* Info sections */}
-      <div id="state-name">{states[stateIndex].name}</div>
-      <div id="state-description">{states[stateIndex].description}</div>
+      {/* Info Sections */}
+      <div id="state-name">{selectedState.name}</div>
+      <div id="state-description">{selectedState.description}</div>
 
-      <div id="city-name">{states[stateIndex].city[cityIndex].name}</div>
-      <div id="city-description">{states[stateIndex].city[cityIndex].description}</div>
+      <div id="city-name">{selectedCity.name}</div>
+      <div id="city-description">{selectedCity.description}</div>
 
-      <div id="landmark-name">
-        {states[stateIndex].city[cityIndex].landmarks[landmarkIndex].name}
-      </div>
-      <div id="landmark-description">
-        {states[stateIndex].city[cityIndex].landmarks[landmarkIndex].description}
-      </div>
+      <div id="landmark-name">{selectedLandmark.name}</div>
+      <div id="landmark-description">{selectedLandmark.description}</div>
     </div>
   );
 }
