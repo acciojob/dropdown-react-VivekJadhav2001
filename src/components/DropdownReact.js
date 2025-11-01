@@ -297,7 +297,7 @@ const DropdownReact = () => {
       <div id="city-description">{city.description}</div>
 
       {/* Landmark Info */}
-      <h1 id="landmark-name">{landmark.name}</h1>
+      <h1 id="#landmark-title">{landmark.name}</h1>
       <div id="landmark-description">{landmark.description}</div>
     </div>
   );
